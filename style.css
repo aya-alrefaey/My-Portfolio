@@ -1,0 +1,346 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:poppins,sans-serif;
+    text-decoration: none;
+}
+body{
+    background-color: #222;
+}
+nav{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+#menu,#close{
+    cursor: pointer;
+    color:#e5e5e5;
+    display: none;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav ul li{
+    margin-right: 40px;
+}
+nav ul li a{
+    color:#e5e5e5;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    text-decoration-color: #007ced;
+}
+#logo{
+ margin-left: 40px;
+ color:#007ced;
+ font-size:x-large;
+ font-weight: bold;
+}
+#logo span{
+    border: #e5e5e5 1px solid;
+    padding: 3px 7px;
+    background-color: #e5e5e5;
+    color: #007ced;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+#cover{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: calc(100vh - 60px);  
+    flex-wrap: wrap;   
+}
+#covimg {
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 15px solid #444;
+    box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
+    /* margin-top: -30px; */
+    margin-bottom: 30px;
+}
+#covimg img{
+    height: 100%;
+    width:100%;
+    transition: 0.5s;
+    /* transform: scale(1.2); */
+}
+#covimg img:hover{
+  /* transform: translateY(-0.5px); */
+    transform: scale(1.1);
+}
+#covinfo{
+   
+    width: 100%;            
+    max-width: 500px;        
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#covinfo #job{
+    color:#e5e5e5;
+    font-size: 14px;
+     font-weight: bold; 
+}
+#covinfo #job span{
+    color:#007ced;
+    font-size: 16px;
+}
+#covinfo h1{
+    color: #007ced;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+#covinfo p{
+    color:#e5e5e5;
+   
+}
+#but{
+     margin:30px 0;
+}
+#but a{
+   
+    color:#fff;
+    background-color: #333;
+    padding: 12px 25px;
+   
+    margin-right:7px;
+    border-radius: 30px;
+    box-shadow:  0 10px 10px -8px rgb(0 0 0 / 78%);
+    cursor: pointer;
+}
+#pro{
+    border:2px solid #007ced;
+    
+}
+#con{
+     border:2px solid #d5d5d5;
+    
+}
+.social{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#cover .social i{
+    color: #e5e5e5;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+#cover .social i:hover{
+    color:#007ced;
+    transform: rotate(360deg);
+}
+#about,#skills,#education,#projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    width: 80%;
+     margin: 30px auto; 
+}
+#education h2{
+     color: #007ced;
+}
+#about h2,#skills h2,#projects h2{
+    color: #007ced;
+    margin-bottom: 20px;
+}
+#education ol li{
+    list-style-position: inside;
+    margin-top: 40px;
+}
+#about p,#education ol li{
+    color: #e5e5e5;
+    text-align: center;
+}
+#education p span{
+    font-weight: bold;
+}
+#items{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+#sql{
+    
+    background-color: #e5e5e5;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.all {
+  display: flex;
+  flex-wrap: wrap;             
+  gap: 20px;                   
+  justify-content: center;     
+}
+
+.card {
+  background: #e5e5e5;         
+  border-radius: 12px;
+  padding: 20px;
+  flex: 1 1 280px;              
+  max-width: 350px;            
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.card p {
+
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.card .btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #0078d7;
+text-align: center;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.card .btn:hover {
+  background: #005bb5;
+  transform: scale(1.05);
+}
+
+
+#contact {
+    /* border: 1px solid #e5e5e5;
+    border-radius: 15px; */
+    /* width: 60%; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+     text-align: center; 
+    /* margin-left:30px; */
+    padding: 25px;
+    line-height: 40px;
+    color: #e5e5e5;
+    
+   
+}
+/* #contact h2{
+    color: #007ced;
+} */
+.links{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.links a{
+     color: #e5e5e5;
+}
+.links a span:hover{
+    color: #007ced;
+    text-decoration: underline;
+}
+@media(max-width:768px) {
+    #logo{
+ margin-left: 20px;
+ color:#007ced;
+ font-size:x-large;
+ font-weight: bold;
+}
+ #navlink {
+    position: absolute;
+    background-color: #222 ;
+    text-align: left;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    z-index: 2;
+  }
+  #close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  #menu {
+    display: block;
+    width: 30px;
+    font-size: 25px;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  header ul a:hover{
+  transform: translateY(0px);
+}
+#navlink {
+    display: block;
+    flex-wrap: wrap;
+    transition: 1s;
+  }
+
+#navul li a {
+
+    display: block;
+  }
+
+#navul {
+display: block;
+  }
+ nav ul li {
+    display: block;
+    margin-top: 30px;
+    padding-left: 10px;
+  }
+  #covimg {
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 15px solid #444;
+    box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
+    /* margin-bottom: -100px; */
+}
+#covinfo{
+   /* margin-top: -100px; */
+    width: 100%;            
+    max-width: 500px;        
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 30px;
+
+}
+}
